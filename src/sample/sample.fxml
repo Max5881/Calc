@@ -5,33 +5,104 @@
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
-
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
       <StackPane prefHeight="150.0" prefWidth="200.0">
          <children>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="159.0" stroke="BLACK" strokeType="INSIDE" width="365.0" />
-             <Text fx:id="textWindow"><font><Font size="25"/></font> </Text>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="175.0" stroke="BLACK" strokeType="INSIDE" width="375.0" />
+             <Text fx:id="textWindow"><font><Font size="25" /></font> </Text>
          </children>
       </StackPane>
-      <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
          <children>
-            <Button onAction="#pressNum" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" text="7">
+            <Button mnemonicParsing="false" onAction="#pressNum" prefHeight="75.0" prefWidth="75.0" text="7" textOverrun="CLIP">
                <font>
                   <Font size="25.0" />
                </font>
             </Button>
-            <Button onAction="#pressNum"  mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" text="8">
+            <Button mnemonicParsing="false" onAction="#pressNum" prefHeight="75.0" prefWidth="75.0" text="8">
                <font>
                   <Font size="25.0" />
                </font>
             </Button>
-            <Button onAction="#pressNum" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" text="9">
+            <Button mnemonicParsing="false" onAction="#pressNum" prefHeight="75.0" prefWidth="75.0" text="9">
                <font>
                   <Font size="25.0" />
                </font>
             </Button>
-            <Button onAction="#pressOperator" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" text="Del">
+            <Button mnemonicParsing="false" onAction="#pressOperator" prefHeight="75.0" prefWidth="75.0" text="Del">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="400.0" spacing="10.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#pressNum" prefHeight="75.0" prefWidth="75.0" text="4">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#pressNum" prefHeight="75.0" prefWidth="75.0" text="5">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#pressNum" prefHeight="75.0" prefWidth="75.0" text="6">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#pressOperator" prefHeight="75.0" prefWidth="75.0" text="*" textOverrun="CLIP">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#pressNum" prefHeight="75.0" prefWidth="75.0" text="3">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#pressNum" prefHeight="75.0" prefWidth="75.0" text="2">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#pressNum" prefHeight="75.0" prefWidth="75.0" text="1">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#pressOperator" prefHeight="75.0" prefWidth="75.0" text="+">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#pressClear" prefHeight="75.0" prefWidth="75.0" text="CE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#pressNum" prefHeight="75.0" prefWidth="75.0" text="0">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#pressOperator" prefHeight="75.0" prefWidth="75.0" text="=">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#pressOperator" prefHeight="75.0" prefWidth="75.0" text="-">
                <font>
                   <Font size="25.0" />
                </font>
